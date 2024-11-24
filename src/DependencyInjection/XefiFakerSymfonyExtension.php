@@ -14,6 +14,9 @@ class XefiFakerSymfonyExtension extends Extension
     {
         $faker = $container->register('xefi.faker', Faker::class);
         $faker->setPublic(true);
+        if (isset($configs[0]['locale'])) {
+            $faker->setArgument('$locale', $configs[0]['locale']);
+        }
 
         // services.yaml
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));

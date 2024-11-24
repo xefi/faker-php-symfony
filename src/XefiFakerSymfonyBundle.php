@@ -2,6 +2,7 @@
 
 namespace Xefi\Faker\SymfonyBundle;
 
+use Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 use Xefi\Faker\Container\Container;
@@ -22,5 +23,18 @@ class XefiFakerSymfonyBundle extends AbstractBundle
     public function build(ContainerBuilder $container): void
     {
         $container->registerExtension(new XefiFakerSymfonyExtension());
+    }
+
+    public function configure(DefinitionConfigurator $definition): void
+    {
+        $definition->rootNode()
+           ->children()
+               ->arrayNode('xefi_faker')
+                   ->children()
+                       ->integerNode('locale')->defaultNull()->end()
+                   ->end()
+               ->end()
+           ->end()
+        ;
     }
 }

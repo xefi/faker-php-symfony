@@ -19,6 +19,7 @@
     "require": {
         "php": "^8.3",
         "symfony/framework-bundle": "^6.4 || ^7.1",
+        "symfony/yaml": "^7.1",
         "xefi/faker-php": "^1"
     },
     "require-dev": {
@@ -27,6 +28,11 @@
     "autoload": {
         "psr-4": {
             "Xefi\\Faker\\SymfonyBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xefi\\Faker\\SymfonyBundle\\Tests\\": "tests/"
         }
     },
     "config": {
