@@ -18,8 +18,8 @@
     ],
     "require": {
         "php": "^8.3",
-        "symfony/framework-bundle": "^6.4 || ^7.1",
-        "symfony/yaml": "^7.1",
+        "symfony/framework-bundle": "^6.4 || ^7.0 || ^7.1",
+        "symfony/yaml": "^6.4 || ^7.0 || ^7.1",
         "xefi/faker-php": "^1"
     },
     "require-dev": {

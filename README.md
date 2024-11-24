@@ -14,5 +14,5 @@ xefi_faker_symfony:
 
 # Requirements
 
-PHP 8.3+
-Symfony 6.4.x or 7.1.x
+PHP 8.3+  
+Symfony 6.4+
