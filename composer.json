@@ -1,0 +1,40 @@
+{
+    "name": "xefi/faker-php-symfony",
+    "version": "1.0.0",
+    "type": "symfony-bundle",
+    "description": "Faker PHP integration with Symfony",
+    "keywords": [
+        "faker",
+        "data",
+        "seeding",
+        "fixtures",
+        "symfony"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Soenen"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "symfony/framework-bundle": "^6.4 || ^7.1",
+        "xefi/faker-php": "^1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xefi\\Faker\\SymfonyBundle\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    }
+}
