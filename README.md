@@ -11,3 +11,8 @@ For this, simply create a `config/packages/xefi_faker.yaml` file, and fill it li
 xefi_faker_symfony:
   locale: fr_FR
 ```
+
+# Requirements
+
+PHP 8.3+
+Symfony 6.4.x or 7.1.x
