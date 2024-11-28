@@ -1,0 +1,3 @@
+services:
+  Xefi\Faker\Faker:
+    alias: xefi.faker

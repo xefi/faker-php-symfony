@@ -1,0 +1,1 @@
+The documentation is available in [https://faker-php.xefi.com](https://faker-php.xefi.com).
