@@ -1,6 +1,5 @@
 {
     "name": "xefi/faker-php-symfony",
-    "version": "1.0.0",
     "type": "symfony-bundle",
     "description": "Faker PHP integration with Symfony",
     "keywords": [
