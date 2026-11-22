@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": ">=8.3 <8.6",
+        "php": "^8.3",
         "symfony/framework-bundle": "^6.4 || ^7.0 || ^8.0",
         "symfony/yaml": "^6.4 || ^7.0 || ^8.0",
         "xefi/faker-php": "^1"
